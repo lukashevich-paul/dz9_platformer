@@ -4,24 +4,26 @@ using UnityEngine;
 [RequireComponent(typeof(Flipper))]
 [RequireComponent(typeof(GroundDetector))]
 [RequireComponent(typeof(Jumper))]
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(PlayerAnimator))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private InputReader _inputReader;
 
     private Mover _mover;
     private Flipper _flipper;
-    private GroundDetector _ground;
+    private GroundDetector _groundDetector;
     private Jumper _jumper;
-    private Animator _animator;
+    private PlayerAnimator _playerAnimator;
+    private float _previousDirection = 0;
+
 
     private void Awake()
     {
         _mover = GetComponent<Mover>();
         _flipper = GetComponent<Flipper>();
-        _ground = GetComponent<GroundDetector>();
+        _groundDetector = GetComponent<GroundDetector>();
         _jumper = GetComponent<Jumper>();
-        _animator = GetComponent<Animator>();
+        _playerAnimator = GetComponent<PlayerAnimator>();
     }
 
     private void FixedUpdate()
@@ -29,26 +31,23 @@ public class Player : MonoBehaviour
         if (_inputReader.Direction != 0)
         {
             _mover.Move(_inputReader.Direction);
-            _flipper.Flip(_inputReader.Direction);
-            _animator.SetBool("walk", true);
-        }
-        else
-        {
-            _animator.SetBool("walk", false);
-        }
 
-        if (_ground.IsGround)
-        {
-            if (_inputReader.GetIsJump())
+            if (_inputReader.Direction != _previousDirection)
             {
-                _jumper.Jump();
+                _flipper.Flip(_inputReader.Direction);
             }
 
-            _animator.SetBool("jump", false);
+            _playerAnimator.SetWalking(true);
+            _previousDirection = _inputReader.Direction;
         }
         else
         {
-            _animator.SetBool("jump", true);
+            _playerAnimator.SetWalking(false);
         }
+
+        if (_inputReader.GetIsJump() && _groundDetector.IsGround)
+            _jumper.Jump();
+
+        _playerAnimator.SetJumping(_groundDetector.IsGround == false);
     }
 }

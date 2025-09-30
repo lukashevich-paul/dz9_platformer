@@ -27,8 +27,15 @@ public class CollectibleSpawner : MonoBehaviour
         {
             if (Random.Range(MinChance, MaxChance) <= _chance)
             {
-                Instantiate(_prefabs[Random.Range(0, _prefabs.Count)], point);
+                Collectible prefab = Instantiate(_prefabs[Random.Range(0, _prefabs.Count)], point);
+
+                prefab.Collected += OnCollected;
             }
         }
+    }
+
+    private void OnCollected(Collectible collectible)
+    {
+        Destroy(collectible.gameObject);
     }
 }

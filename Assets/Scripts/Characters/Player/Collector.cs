@@ -6,7 +6,7 @@ public class Collector : MonoBehaviour
     {
         if (collision.TryGetComponent(out Collectible _collectible))
         {
-            Destroy(_collectible.gameObject);
+            _collectible.Collect();
         }
     }
 }

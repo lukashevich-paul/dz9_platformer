@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Mover), typeof(Flipper))]
-public class Enemy : MonoBehaviour
+public class Patrol : MonoBehaviour
 {
     [SerializeField] private Transform _route;
     [SerializeField] private List<Transform> _waypoints;
@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         _flipper = GetComponent<Flipper>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Math.Abs(_waypoints[_currentPoin].transform.position.x - transform.position.x) < _approvalDistance)
         {
