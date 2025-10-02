@@ -36,6 +36,7 @@ public class CollectibleSpawner : MonoBehaviour
 
     private void OnCollected(Collectible collectible)
     {
+        collectible.Collected -= OnCollected;
         Destroy(collectible.gameObject);
     }
 }

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3546396853581460343}
   - component: {fileID: 6284244886127178391}
-  - component: {fileID: 6389085323225034304}
   - component: {fileID: 6940738205824638288}
+  - component: {fileID: 3586451379727695325}
   m_Layer: 0
-  m_Name: Meat
+  m_Name: Coin-Skull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,18 +56,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6389085323225034304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313048859440977153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac69f4c7363c9744a9d6875dad28e6d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &6940738205824638288
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103,6 +91,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &3586451379727695325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313048859440977153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9faa5f1e1050b458d8f5538b2369ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 1
 --- !u!1 &4375562812159709530
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +177,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1661877800, guid: 8e1b272d067b5fa49bd7cc647c20939e, type: 3}
+  m_Sprite: {fileID: -212701961, guid: 8b4a1dcfdc3d88548a3c7fed6e633b53, type: 3}
   m_Color: {r: 0.7056604, g: 0.53124243, b: 0.562244, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -4,7 +4,6 @@ public class CameraMover : MonoBehaviour
 {
     [SerializeField] private float _speed = 20f;
     [SerializeField] private Transform _player;
-    [SerializeField] private float _distance = 2f;
 
     private void Update()
     {

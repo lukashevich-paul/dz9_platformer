@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Mover), typeof(Flipper))]
 public class Patrol : MonoBehaviour
 {
+    public const float DirectionPositive = 1f;
+    public const float DirectionNegative = -1f;
+
     [SerializeField] private Transform _route;
     [SerializeField] private List<Transform> _waypoints;
     [SerializeField] float _approvalDistance = 0.5f;
@@ -38,7 +41,11 @@ public class Patrol : MonoBehaviour
         }
 
         float direction = _waypoints[_currentPoin].transform.position.x - transform.position.x;
-        direction /= Math.Abs(direction);
+
+        if (direction < 0)
+            direction = DirectionNegative;
+        else if (direction > 0)
+            direction = DirectionPositive;
 
         _mover.Move(direction);
         _flipper.Flip(direction);

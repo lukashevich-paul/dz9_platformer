@@ -14,6 +14,8 @@ public class Mover : MonoBehaviour
 
     public void Move(float direction)
     {
-        _rigidbody.AddForce(Vector2.right * direction * _speed);
+        Vector2 velocity = _rigidbody.velocity;
+        velocity.x += direction * _speed * Time.fixedDeltaTime;
+        _rigidbody.velocity = velocity;
     }
 }

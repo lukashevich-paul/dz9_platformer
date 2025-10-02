@@ -37,17 +37,20 @@ public class Player : MonoBehaviour
                 _flipper.Flip(_inputReader.Direction);
             }
 
-            _playerAnimator.SetWalking(true);
+            _playerAnimator.WalkingStart();
             _previousDirection = _inputReader.Direction;
         }
         else
         {
-            _playerAnimator.SetWalking(false);
+            _playerAnimator.WalkingStop();
         }
 
         if (_inputReader.GetIsJump() && _groundDetector.IsGround)
             _jumper.Jump();
 
-        _playerAnimator.SetJumping(_groundDetector.IsGround == false);
+        if (_groundDetector.IsGround == false)
+            _playerAnimator.JumpingStart();
+        else
+            _playerAnimator.JumpingStop();
     }
 }

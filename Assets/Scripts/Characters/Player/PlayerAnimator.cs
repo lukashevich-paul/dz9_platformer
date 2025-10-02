@@ -13,13 +13,23 @@ public class PlayerAnimator : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void SetWalking(bool isWalking)
+    public void WalkingStart()
     {
-        _animator.SetBool(Walk, isWalking);
+        _animator.SetBool(Walk, true);
     }
 
-    public void SetJumping(bool isJumping)
+    public void WalkingStop()
     {
-        _animator.SetBool(Jump, isJumping);
+        _animator.SetBool(Walk, false);
+    }
+
+    public void JumpingStart()
+    {
+        _animator.SetBool(Jump, true);
+    }
+
+    public void JumpingStop()
+    {
+        _animator.SetBool(Jump, false);
     }
 }
