@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimator : MonoBehaviour
 {
-    public readonly int Walk = Animator.StringToHash(nameof(Walk));
+    public readonly int WalkSpeed = Animator.StringToHash(nameof(WalkSpeed));
     public readonly int Jump = Animator.StringToHash(nameof(Jump));
 
     private Animator _animator;
@@ -13,14 +13,9 @@ public class PlayerAnimator : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void WalkingStart()
+    public void Moving(float xVelocity)
     {
-        _animator.SetBool(Walk, true);
-    }
-
-    public void WalkingStop()
-    {
-        _animator.SetBool(Walk, false);
+        _animator.SetFloat(WalkSpeed, xVelocity);
     }
 
     public void JumpingStart()

@@ -21,6 +21,11 @@ public class Wallet : MonoBehaviour
         Health += value;
     }
 
+    public void DecreaseHealth()
+    {
+        Health--;
+    }
+
     public string ToString()
     {
         return $"coins: {Coins},  power: {Power},  health: {Health}";

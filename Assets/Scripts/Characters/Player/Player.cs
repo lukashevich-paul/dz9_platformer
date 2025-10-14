@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Mover))]
@@ -5,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(GroundDetector))]
 [RequireComponent(typeof(Jumper))]
 [RequireComponent(typeof(PlayerAnimator))]
+[RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Wallet))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private InputReader _inputReader;
@@ -15,7 +18,8 @@ public class Player : MonoBehaviour
     private Jumper _jumper;
     private PlayerAnimator _playerAnimator;
     private float _previousDirection = 0;
-
+    private Health _health;
+    private Wallet _wallet;
 
     private void Awake()
     {
@@ -24,6 +28,8 @@ public class Player : MonoBehaviour
         _groundDetector = GetComponent<GroundDetector>();
         _jumper = GetComponent<Jumper>();
         _playerAnimator = GetComponent<PlayerAnimator>();
+        _health = GetComponent<Health>();
+        _wallet = GetComponent<Wallet>();
     }
 
     private void FixedUpdate()
@@ -37,13 +43,10 @@ public class Player : MonoBehaviour
                 _flipper.Flip(_inputReader.Direction);
             }
 
-            _playerAnimator.WalkingStart();
             _previousDirection = _inputReader.Direction;
         }
-        else
-        {
-            _playerAnimator.WalkingStop();
-        }
+
+        _playerAnimator.Moving(Math.Abs(_inputReader.Direction));
 
         if (_inputReader.GetIsJump() && _groundDetector.IsGround)
             _jumper.Jump();
@@ -52,5 +55,13 @@ public class Player : MonoBehaviour
             _playerAnimator.JumpingStart();
         else
             _playerAnimator.JumpingStop();
+
+        if (_inputReader.GetIsCure() && _wallet.Health > 0)
+        {
+            _wallet.DecreaseHealth();
+            print(_wallet.ToString());
+
+            _health.TakeCure();
+        }
     }
 }

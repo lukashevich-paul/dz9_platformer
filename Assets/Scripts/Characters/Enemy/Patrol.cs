@@ -2,18 +2,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Mover), typeof(Flipper))]
-public class Patrol : MonoBehaviour
+public class Patrol : BehaviorType
 {
-    public const float DirectionPositive = 1f;
-    public const float DirectionNegative = -1f;
-
     [SerializeField] private Transform _route;
     [SerializeField] private List<Transform> _waypoints;
     [SerializeField] float _approvalDistance = 0.5f;
 
-    private Mover _mover;
-    private Flipper _flipper;
     private int _currentPoin = 0;
 
 #if UNITY_EDITOR
@@ -26,12 +20,6 @@ public class Patrol : MonoBehaviour
             _waypoints.Add(_route.GetChild(i));
     }
 #endif
-
-    private void Start()
-    {
-        _mover = GetComponent<Mover>();
-        _flipper = GetComponent<Flipper>();
-    }
 
     private void FixedUpdate()
     {
