@@ -6,7 +6,7 @@ public class Patrol : BehaviorType
 {
     [SerializeField] private Transform _route;
     [SerializeField] private List<Transform> _waypoints;
-    [SerializeField] float _approvalDistance = 0.5f;
+    [SerializeField] private float _approvalDistance = 0.5f;
 
     private int _currentPoin = 0;
 
@@ -35,7 +35,7 @@ public class Patrol : BehaviorType
         else if (direction > 0)
             direction = DirectionPositive;
 
-        _mover.Move(direction);
-        _flipper.Flip(direction);
+        Mover.Move(direction);
+        Flipper.Flip(direction);
     }
 }

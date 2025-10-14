@@ -7,7 +7,7 @@ public class Damager : MonoBehaviour
 
     public float DamageValue => _damage;
 
-    private void Start()
+    private void Awake()
     {
         gameObject.GetComponent<Collider2D>().isTrigger = true;
     }

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +10,14 @@ public class Enemy : MonoBehaviour
     private Patrol _patrol;
     private Chaser _chaser;
 
-    private void Start()
+    private void Awake()
     {
         _patrol = GetComponent<Patrol>();
         _chaser = GetComponent<Chaser>();
+    }
 
+    private void Start()
+    {
         Patrol();
     }
 

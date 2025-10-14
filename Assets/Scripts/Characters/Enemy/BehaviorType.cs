@@ -6,12 +6,12 @@ public class BehaviorType : MonoBehaviour
     public const float DirectionPositive = 1f;
     public const float DirectionNegative = -1f;
 
-    protected Mover _mover;
-    protected Flipper _flipper;
+    protected Mover Mover;
+    protected Flipper Flipper;
 
     protected void Awake()
     {
-        _mover = GetComponent<Mover>();
-        _flipper = GetComponent<Flipper>();
+        Mover = GetComponent<Mover>();
+        Flipper = GetComponent<Flipper>();
     }
 }

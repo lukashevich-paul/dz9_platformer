@@ -24,8 +24,8 @@ public class Chaser : BehaviorType
                 else if (direction > 0)
                     direction = DirectionPositive;
 
-                _mover.Move(direction);
-                _flipper.Flip(direction);
+                Mover.Move(direction);
+                Flipper.Flip(direction);
             }
         }
     }
