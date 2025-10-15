@@ -46,20 +46,20 @@ public class Player : MonoBehaviour
             _previousDirection = _inputReader.Direction;
         }
 
-        _playerAnimator.Moving(Math.Abs(_inputReader.Direction));
+        _playerAnimator.Move(Math.Abs(_inputReader.Direction));
 
         if (_inputReader.GetIsJump() && _groundDetector.IsGround)
             _jumper.Jump();
 
         if (_groundDetector.IsGround == false)
-            _playerAnimator.JumpingStart();
+            _playerAnimator.JumpStart();
         else
-            _playerAnimator.JumpingStop();
+            _playerAnimator.JumpStop();
 
         if (_inputReader.GetIsCure() && _wallet.Health > 0)
         {
             _wallet.DecreaseHealth();
-            print(_wallet.ToString());
+            print(_wallet.GetToString());
 
             _health.TakeCure();
         }

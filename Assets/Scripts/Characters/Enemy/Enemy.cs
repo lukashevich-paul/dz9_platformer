@@ -2,17 +2,20 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Patrol))]
+[RequireComponent(typeof(Patroller))]
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Chaser))]
 public class Enemy : MonoBehaviour
 {
-    private Patrol _patrol;
+    [SerializeField] private ChaseZone _chaseZone;
+
+    private Patroller _patroller;
     private Chaser _chaser;
+    private Transform _previousTarget;
 
     private void Awake()
     {
-        _patrol = GetComponent<Patrol>();
+        _patroller = GetComponent<Patroller>();
         _chaser = GetComponent<Chaser>();
     }
 
@@ -21,17 +24,34 @@ public class Enemy : MonoBehaviour
         Patrol();
     }
 
-    public void Chase(Player player)
+    private void Update()
     {
-        _patrol.enabled = false;
-
-        _chaser.enabled = true;
-        _chaser.Init(player);
+        if (_chaseZone.TargetTransform != null)
+        {
+            Chase(_chaseZone.TargetTransform);
+        }
+        else
+        {
+            Patrol();
+        }
     }
 
-    public void Patrol()
+    private void Chase(Transform transform)
     {
-        _patrol.enabled = true;
+        if (_previousTarget != transform)
+        {
+            _previousTarget = transform;
+            _patroller.enabled = false;
+
+            _chaser.enabled = true;
+            _chaser.Init(transform);
+        }
+    }
+
+    private void Patrol()
+    {
+        _previousTarget = null;
+        _patroller.enabled = true;
 
         _chaser.enabled = false;
     }

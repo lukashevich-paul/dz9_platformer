@@ -13,17 +13,17 @@ public class PlayerAnimator : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void Moving(float xVelocity)
+    public void Move(float xVelocity)
     {
         _animator.SetFloat(WalkSpeed, xVelocity);
     }
 
-    public void JumpingStart()
+    public void JumpStart()
     {
         _animator.SetBool(Jump, true);
     }
 
-    public void JumpingStop()
+    public void JumpStop()
     {
         _animator.SetBool(Jump, false);
     }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Patrol : BehaviorType
+public class Patroller : BehaviorType
 {
     [SerializeField] private Transform _route;
     [SerializeField] private List<Transform> _waypoints;

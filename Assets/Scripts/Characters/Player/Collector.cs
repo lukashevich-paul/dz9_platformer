@@ -27,7 +27,7 @@ public class Collector : MonoBehaviour
                     break;
             }
 
-            print(_wallet.ToString());
+            print(_wallet.GetToString());
             _collectible.Collect();
         }
     }

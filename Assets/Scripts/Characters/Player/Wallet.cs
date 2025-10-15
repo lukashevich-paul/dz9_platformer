@@ -26,7 +26,7 @@ public class Wallet : MonoBehaviour
         Health--;
     }
 
-    public string ToString()
+    public string GetToString()
     {
         return $"coins: {Coins},  power: {Power},  health: {Health}";
     }

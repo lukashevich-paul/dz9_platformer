@@ -1,21 +1,19 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Chaser : BehaviorType
 {
-    private Player _player = null;
+    private Transform _targetTransform = null;
 
-    public void Init(Player player)
+    public void Init(Transform transform)
     {
-        _player = player;
+        _targetTransform = transform;
     }
 
     private void FixedUpdate()
     {
-        if (_player != null)
+        if (_targetTransform != null)
         {
-            float direction = _player.transform.position.x - transform.position.x;
+            float direction = _targetTransform.position.x - transform.position.x;
 
             if (direction != 0)
             {

@@ -160,17 +160,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6770707763885496888, guid: ae6c4f644fcbc4b448cd0dd79849145a, type: 3}
   m_PrefabInstance: {fileID: 4013461714556222056}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &52213268 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9159263701197264920, guid: ae6c4f644fcbc4b448cd0dd79849145a, type: 3}
-  m_PrefabInstance: {fileID: 4013461714556222056}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf4ed8c12974124390e245c84696b5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &105863380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,7 +2469,7 @@ GameObject:
   - component: {fileID: 1244931761}
   - component: {fileID: 1244931762}
   m_Layer: 0
-  m_Name: ChaseZone
+  m_Name: Plato_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2558,8 +2547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cded918828a9c4242b9779d622146397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemies:
-  - {fileID: 52213268}
 --- !u!1 &1369157559
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,6 +4165,10 @@ PrefabInstance:
       propertyPath: _agroZone
       value: 
       objectReference: {fileID: 2079648634}
+    - target: {fileID: 9159263701197264920, guid: ae6c4f644fcbc4b448cd0dd79849145a, type: 3}
+      propertyPath: _chaseZone
+      value: 
+      objectReference: {fileID: 1244931762}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

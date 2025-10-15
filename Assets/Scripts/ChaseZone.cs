@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class ChaseZone : MonoBehaviour
 {
-    [SerializeField] private Enemy[] _enemies;
+    private Transform _targetTransform;
+
+    public Transform TargetTransform => _targetTransform;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Player player))
         {
-            foreach (Enemy enemy in _enemies) {
-                enemy.Chase(player);
-            }
+            _targetTransform = player.transform;
         }
     }
 
@@ -18,10 +18,7 @@ public class ChaseZone : MonoBehaviour
     {
         if (collision.TryGetComponent<Player>(out _))
         {
-            foreach (Enemy enemy in _enemies)
-            {
-                enemy.Patrol();
-            }
+            _targetTransform = null;
         }
     }
 }
