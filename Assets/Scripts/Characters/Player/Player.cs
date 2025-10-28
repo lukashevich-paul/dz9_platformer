@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Mover))]
-[RequireComponent(typeof(Flipper))]
 [RequireComponent(typeof(GroundDetector))]
 [RequireComponent(typeof(Jumper))]
 [RequireComponent(typeof(PlayerAnimator))]
@@ -11,9 +10,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private InputReader _inputReader;
+    [SerializeField] private Flipper _flipper;
 
     private Mover _mover;
-    private Flipper _flipper;
     private GroundDetector _groundDetector;
     private Jumper _jumper;
     private PlayerAnimator _playerAnimator;
@@ -24,7 +23,6 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         _mover = GetComponent<Mover>();
-        _flipper = GetComponent<Flipper>();
         _groundDetector = GetComponent<GroundDetector>();
         _jumper = GetComponent<Jumper>();
         _playerAnimator = GetComponent<PlayerAnimator>();

@@ -38,7 +38,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: body
+    path: Parts/body
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -72,7 +72,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: body/arm_L
+    path: Parts/body/arm_L
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -106,7 +106,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: body/arm_L/hand_L
+    path: Parts/body/arm_L/hand_L
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -131,7 +131,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: body/arm_L/hand_L/Atlas_H_M_W_0000_10
+    path: Parts/body/arm_L/hand_L/Atlas_H_M_W_0000_10
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -165,7 +165,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: body/arm_R
+    path: Parts/body/arm_R
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -199,7 +199,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: body/arm_R/hand_r
+    path: Parts/body/arm_R/hand_r
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -233,7 +233,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: hair
+    path: Parts/hair
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -267,7 +267,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: leg_L
+    path: Parts/leg_L
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -301,7 +301,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: leg_L/foot_R
+    path: Parts/leg_L/foot_R
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -335,7 +335,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: leg_R
+    path: Parts/leg_R
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -369,7 +369,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: leg_R/foot_R
+    path: Parts/leg_R/foot_R
   m_PositionCurves:
   - curve:
       serializedVersion: 2
@@ -404,7 +404,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: hair
+    path: Parts/hair
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -438,7 +438,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: body
+    path: Parts/body
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -450,7 +450,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2633457945
+      path: Parts/2633457945
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -459,7 +459,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3685223346
+      path: Parts/3685223346
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -468,7 +468,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 164322477
+      path: Parts/164322477
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -477,7 +477,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2365523535
+      path: Parts/2365523535
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -486,7 +486,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 4089733582
+      path: Parts/4089733582
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -495,7 +495,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 615463165
+      path: Parts/615463165
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -504,7 +504,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2633457945
+      path: Parts/2633457945
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -513,7 +513,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2580151269
+      path: Parts/2580151269
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -522,7 +522,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3811412132
+      path: Parts/3811412132
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -531,7 +531,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1673971334
+      path: Parts/1673971334
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -540,7 +540,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2317134781
+      path: Parts/2317134781
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -549,7 +549,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3685223346
+      path: Parts/3685223346
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -558,7 +558,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1346742618
+      path: Parts/1346742618
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -623,7 +623,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -662,7 +662,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -701,7 +701,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -740,7 +740,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -779,7 +779,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -818,7 +818,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -848,7 +848,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -878,7 +878,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -908,7 +908,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -947,7 +947,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: body/arm_L
+    path: Parts/body/arm_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -986,7 +986,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: body/arm_L
+    path: Parts/body/arm_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1025,7 +1025,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: body/arm_L
+    path: Parts/body/arm_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1064,7 +1064,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: body/arm_L/hand_L
+    path: Parts/body/arm_L/hand_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1103,7 +1103,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: body/arm_L/hand_L
+    path: Parts/body/arm_L/hand_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1142,7 +1142,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: body/arm_L/hand_L
+    path: Parts/body/arm_L/hand_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1172,7 +1172,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: body/arm_L/hand_L/Atlas_H_M_W_0000_10
+    path: Parts/body/arm_L/hand_L/Atlas_H_M_W_0000_10
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1202,7 +1202,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: body/arm_L/hand_L/Atlas_H_M_W_0000_10
+    path: Parts/body/arm_L/hand_L/Atlas_H_M_W_0000_10
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1232,7 +1232,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: body/arm_L/hand_L/Atlas_H_M_W_0000_10
+    path: Parts/body/arm_L/hand_L/Atlas_H_M_W_0000_10
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1271,7 +1271,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: body/arm_R
+    path: Parts/body/arm_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1310,7 +1310,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: body/arm_R
+    path: Parts/body/arm_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1349,7 +1349,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: body/arm_R
+    path: Parts/body/arm_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1388,7 +1388,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: body/arm_R/hand_r
+    path: Parts/body/arm_R/hand_r
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1427,7 +1427,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: body/arm_R/hand_r
+    path: Parts/body/arm_R/hand_r
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1466,7 +1466,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: body/arm_R/hand_r
+    path: Parts/body/arm_R/hand_r
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1505,7 +1505,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1544,7 +1544,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1583,7 +1583,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1622,7 +1622,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: leg_L
+    path: Parts/leg_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1661,7 +1661,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: leg_L
+    path: Parts/leg_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1700,7 +1700,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: leg_L
+    path: Parts/leg_L
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1739,7 +1739,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: leg_L/foot_R
+    path: Parts/leg_L/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1778,7 +1778,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: leg_L/foot_R
+    path: Parts/leg_L/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1817,7 +1817,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: leg_L/foot_R
+    path: Parts/leg_L/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1856,7 +1856,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: leg_R
+    path: Parts/leg_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1895,7 +1895,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: leg_R
+    path: Parts/leg_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1934,7 +1934,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: leg_R
+    path: Parts/leg_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1973,7 +1973,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: leg_R/foot_R
+    path: Parts/leg_R/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -2012,7 +2012,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: leg_R/foot_R
+    path: Parts/leg_R/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -2051,7 +2051,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: leg_R/foot_R
+    path: Parts/leg_R/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -2064,7 +2064,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: body/arm_R
+    path: Parts/body/arm_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2076,7 +2076,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: body/arm_R
+    path: Parts/body/arm_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2088,7 +2088,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: body/arm_R
+    path: Parts/body/arm_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2100,7 +2100,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: leg_L/foot_R
+    path: Parts/leg_L/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2112,7 +2112,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: leg_L/foot_R
+    path: Parts/leg_L/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2124,7 +2124,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: leg_L/foot_R
+    path: Parts/leg_L/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2136,7 +2136,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: body/arm_R/hand_r
+    path: Parts/body/arm_R/hand_r
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2148,7 +2148,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: body/arm_R/hand_r
+    path: Parts/body/arm_R/hand_r
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2160,7 +2160,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: body/arm_R/hand_r
+    path: Parts/body/arm_R/hand_r
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2172,7 +2172,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: body/arm_L/hand_L/Atlas_H_M_W_0000_10
+    path: Parts/body/arm_L/hand_L/Atlas_H_M_W_0000_10
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2184,7 +2184,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: body/arm_L/hand_L/Atlas_H_M_W_0000_10
+    path: Parts/body/arm_L/hand_L/Atlas_H_M_W_0000_10
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2196,7 +2196,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: body/arm_L/hand_L/Atlas_H_M_W_0000_10
+    path: Parts/body/arm_L/hand_L/Atlas_H_M_W_0000_10
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2208,7 +2208,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: leg_R/foot_R
+    path: Parts/leg_R/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2220,7 +2220,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: leg_R/foot_R
+    path: Parts/leg_R/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2232,7 +2232,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: leg_R/foot_R
+    path: Parts/leg_R/foot_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2244,7 +2244,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: leg_L
+    path: Parts/leg_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2256,7 +2256,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: leg_L
+    path: Parts/leg_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2268,7 +2268,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: leg_L
+    path: Parts/leg_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2280,7 +2280,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: body/arm_L/hand_L
+    path: Parts/body/arm_L/hand_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2292,7 +2292,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: body/arm_L/hand_L
+    path: Parts/body/arm_L/hand_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2304,7 +2304,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: body/arm_L/hand_L
+    path: Parts/body/arm_L/hand_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2316,7 +2316,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: body/arm_L
+    path: Parts/body/arm_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2328,7 +2328,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: body/arm_L
+    path: Parts/body/arm_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2340,7 +2340,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: body/arm_L
+    path: Parts/body/arm_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2352,7 +2352,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2364,7 +2364,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2376,7 +2376,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: body
+    path: Parts/body
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2388,7 +2388,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: leg_R
+    path: Parts/leg_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2400,7 +2400,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: leg_R
+    path: Parts/leg_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2412,7 +2412,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: leg_R
+    path: Parts/leg_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2424,7 +2424,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2436,7 +2436,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2448,7 +2448,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: hair
+    path: Parts/hair
     classID: 4
     script: {fileID: 0}
     flags: 0
