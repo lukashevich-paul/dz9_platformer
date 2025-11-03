@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private InputReader _inputReader;
     [SerializeField] private Flipper _flipper;
+    [SerializeField] private Vampirism _vampirism;
 
     private Mover _mover;
     private GroundDetector _groundDetector;
@@ -60,6 +61,12 @@ public class Player : MonoBehaviour
             print(_wallet.GetToString());
 
             _health.TakeCure();
+        }
+
+        if (_inputReader.GetIsFirstAbility())
+        {
+            _vampirism.gameObject.SetActive(true);
+            _vampirism.Run();
         }
     }
 }

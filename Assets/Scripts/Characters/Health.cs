@@ -33,4 +33,14 @@ public class Health : MonoBehaviour
 
         Changed?.Invoke();
     }
+
+    public void TakeCure(float value)
+    {
+        _value += value;
+
+        if (_value > MaxValue)
+            _value = MaxValue;
+
+        Changed?.Invoke();
+    }
 }
