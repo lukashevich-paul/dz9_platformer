@@ -45,7 +45,7 @@ public class Vampirism : MonoBehaviour
         _wait = new WaitForSeconds(_tickTime);
     }
 
-    void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, _radius);
@@ -71,16 +71,25 @@ public class Vampirism : MonoBehaviour
 
             Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, _radius);
 
+            Collider2D neighborHitCollider = null;
+            float magnitude = _scale;
+
             foreach (Collider2D hitCollider in hitColliders)
             {
-                if (hitCollider.gameObject.TryGetComponent<Enemy>(out _) == true
-                    && hitCollider.gameObject.TryGetComponent(out Health enemyHealth))
+                float hitMagnitude = (transform.position - hitCollider.transform.position).magnitude;
+
+                if (magnitude > hitMagnitude && hitCollider.gameObject.TryGetComponent<Enemy>(out _) == true)
                 {
-                    if (enemyHealth.Value > 0)
-                    {
-                        enemyHealth.TakeDamage(_damageValue);
-                        _health.TakeCure(_damageValue * _vampirePower);
-                    }
+                    neighborHitCollider = hitCollider;
+                }
+            }
+
+            if (neighborHitCollider != null && neighborHitCollider.gameObject.TryGetComponent(out Health enemyHealth))
+            {
+                if (enemyHealth.Value > 0)
+                {
+                    enemyHealth.TakeDamage(_damageValue);
+                    _health.TakeCure(_damageValue * _vampirePower);
                 }
             }
 

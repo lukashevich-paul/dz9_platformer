@@ -16,7 +16,8 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        _value -= damage;
+        if (_value > 0)
+            _value -= damage;
 
         Changed?.Invoke();
 
@@ -26,12 +27,7 @@ public class Health : MonoBehaviour
 
     public void TakeCure()
     {
-        _value += MaxValue / PartOfMaxValue;
-
-        if (_value > MaxValue)
-            _value = MaxValue;
-
-        Changed?.Invoke();
+        TakeCure(MaxValue / PartOfMaxValue);
     }
 
     public void TakeCure(float value)

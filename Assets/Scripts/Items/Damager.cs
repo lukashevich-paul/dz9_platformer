@@ -16,7 +16,12 @@ public class Damager : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Health _health))
         {
-            _health.TakeDamage(DamageValue);
+            if (gameObject.GetComponentInParent<Enemy>()) {
+                if (collision.gameObject.TryGetComponent<Player>(out _))
+                    _health.TakeDamage(DamageValue);
+            } else {
+                _health.TakeDamage(DamageValue);
+            }
         }
     }
 }
