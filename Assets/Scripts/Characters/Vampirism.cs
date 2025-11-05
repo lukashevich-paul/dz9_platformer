@@ -6,8 +6,10 @@ using UnityEngine;
 public class Vampirism : MonoBehaviour
 {
     public enum Statuses { Ready, Active, Charge };
+    public int MaxEnemyHitColleders = 5;
 
     [SerializeField] private Health _health;
+    [SerializeField] private LayerMask _layerMask;
     [SerializeField] private float _scale = 40f;
     [SerializeField] private float _radius = 4f;
     [SerializeField] private float _damageValue = 1f;
@@ -69,27 +71,37 @@ public class Vampirism : MonoBehaviour
         {
             ActiveSeconds -= _tickTime;
 
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, _radius);
+            ContactFilter2D contactFilter = new ContactFilter2D();
+            contactFilter.useLayerMask = true;
+            contactFilter.SetLayerMask(_layerMask);
 
-            Collider2D neighborHitCollider = null;
-            float magnitude = _scale;
+            Collider2D[] hitColliders = new Collider2D[MaxEnemyHitColleders];
 
-            foreach (Collider2D hitCollider in hitColliders)
+            if (Physics2D.OverlapCircle(transform.position, _radius, contactFilter, hitColliders) > 0)
             {
-                float hitMagnitude = (transform.position - hitCollider.transform.position).magnitude;
+                Collider2D neighborHitCollider = null;
+                float magnitude = _scale;
 
-                if (magnitude > hitMagnitude && hitCollider.gameObject.TryGetComponent<Enemy>(out _) == true)
+                foreach (Collider2D hitCollider in hitColliders)
                 {
-                    neighborHitCollider = hitCollider;
+                    if (hitCollider != null)
+                    {
+                        float hitMagnitude = (transform.position - hitCollider.transform.position).magnitude;
+
+                        if (magnitude > hitMagnitude && hitCollider.gameObject.TryGetComponent<Enemy>(out _))
+                        {
+                            neighborHitCollider = hitCollider;
+                        }
+                    }
                 }
-            }
 
-            if (neighborHitCollider != null && neighborHitCollider.gameObject.TryGetComponent(out Health enemyHealth))
-            {
-                if (enemyHealth.Value > 0)
+                if (neighborHitCollider != null && neighborHitCollider.gameObject.TryGetComponent(out Health enemyHealth))
                 {
-                    enemyHealth.TakeDamage(_damageValue);
-                    _health.TakeCure(_damageValue * _vampirePower);
+                    if (enemyHealth.Value > 0)
+                    {
+                        enemyHealth.TakeDamage(_damageValue);
+                        _health.TakeCure(_damageValue * _vampirePower);
+                    }
                 }
             }
 

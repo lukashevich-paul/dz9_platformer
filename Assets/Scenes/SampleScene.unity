@@ -856,7 +856,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339337874060691206, guid: ae6c4f644fcbc4b448cd0dd79849145a, type: 3}
       propertyPath: _speed
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1704736645017491986, guid: ae6c4f644fcbc4b448cd0dd79849145a, type: 3}
       propertyPath: m_Enabled
@@ -4489,7 +4489,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3f577b8258fb44cb3438d1d11a282b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxEnemyHitColleders: 5
   _health: {fileID: 1726524506}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 64
   _scale: 46
   _radius: 4
   _damageValue: 4
@@ -4947,7 +4951,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 339337874060691206, guid: ae6c4f644fcbc4b448cd0dd79849145a, type: 3}
       propertyPath: _speed
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1704736645017491986, guid: ae6c4f644fcbc4b448cd0dd79849145a, type: 3}
       propertyPath: m_Enabled
